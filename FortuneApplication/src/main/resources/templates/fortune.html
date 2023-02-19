@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Fortune Teller</title>
+  <style>
+    /* 自定义样式 */
+    body {
+      background-color: #303030;
+      font-family: 'Helvetica Neue', sans-serif;
+      color: #fff;
+    }
+    .container1 {
+      margin: 50px auto;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .container2 {
+      margin: 50px auto;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    .container3 {
+      margin: 50px auto;
+      width: 80%;
+      max-width: 600px;
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #2ECC71;
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #2ECC71;
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #2ECC71;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      color: #2ECC71;
+      font-size: 3em;
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    button {
+      background-color: #2ECC71;
+      border: none;
+      color: #fff;
+      padding: 14px 24px;
+      font-size: 1.2em;
+      border-radius: 5px;
+      margin-top: 5px;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+    button:hover {
+      background-color: #27AE60;
+      box-shadow: 0px 4px 12px rgba(46, 204, 113, 0.5);
+    }
+  </style>
+</head>
+<body>
+<div class="container1">
+  <h1>Fortune Teller</h1>
+</div>
+<div class="container2">
+  <h3>Click the button to get a random fortune:</h3>
+  <button onclick="window.location.reload();">Get Fortune</button>
+  <br>
+<!--  <p th:text="${fortune}">Your Fortune</p>-->
+</div>
+<div class="container3">
+    <h2 th:text="${fortune}">Your Fortune</h2>
+</div>
+</body>
+</html>
